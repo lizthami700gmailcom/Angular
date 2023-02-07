@@ -1,0 +1,19 @@
+<p>Lisado de Heroes</p>
+
+<ul>
+    <!-- *ngFor= es como un FOR en el cual hace presentacion de los datos en el Arreays--> 
+    <li *ngFor="let heroe of heroes; let i= index"> 
+       {{i+1}} .- {{heroe}}
+    </li>
+</ul>
+
+<div>
+    <!-- *ngIF = es como un if en el cual dice "Si heroeBorrado tiene datos borrados, entonces aparecera y si no entonces se ocultara "-->
+    <h3 *ngIf="herroeBorrado != ''">Heroes Borrados</h3>
+    {{ herroeBorrado }}
+</div>
+
+
+<button (click)="borrarHeroe()">
+    Borrar
+</button>
