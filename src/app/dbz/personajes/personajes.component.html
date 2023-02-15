@@ -1,0 +1,8 @@
+
+
+<h3>Personajes</h3>
+    <hr>
+              <!-- El que se encuentra DESPUES del LET es una variable creada -->  
+    <ul *ngFor="let personaje of personajes">
+        <li>  {{personaje.nombre}} --  {{personaje.poder | number}}</li>
+    </ul>

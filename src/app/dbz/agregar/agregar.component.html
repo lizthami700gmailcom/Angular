@@ -1,0 +1,13 @@
+    <h3>Agregar</h3>
+        <hr>
+        <!-- Evento personalizado-->
+    <form (ngSubmit)="agregar()">
+                                                <!-- VALUE= hace que el valor que se determino se coloque   ( [value]="nuevo.poder")-->
+                                                <!-- [(ngModel)] = Con la directiva ng-model, se puede vincular el valor de un campo de entrada a una variable creada (Se agregan datos sin quitar los datos predeterminados).-->
+        <input type="text" placeholder="Nombre"  name="nombre" [(ngModel)]="nuevo.nombre">
+        <input type="number" placeholder="Poder" [value]="nuevo.poder">
+            <br>
+            <br>
+        <button  mat-raised-button color="primary"> Agregar </button>
+            
+    </form>
